@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Outfit:wght@300;400;600&display=swap');
+
+/* RESET */
+
+
+/*  1. Use a more-intuitive box-sizing model. */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+   */
+
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+    5. Improve media defaults
+  */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+
+/* General Styles */
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.component {
+    background: hsl(216, 50%, 16%);
+    color: white;
+    padding: 1.5rem;
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time,
+.eth-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* Typography */
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.light-grey {
+    color: hsl(215, 51%, 70%);
+}
+
+.neon-blue {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+hr {
+    margin: .4rem 0;
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    border: none;
+    outline: none;
+
+}
+
+.info h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.active:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+/* Layout */
+
+.creator {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+picture {
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.creator img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.component {
+    display: grid;
+    gap: 1rem;
+    border-radius: 1rem;
+    max-width: 300px;
+    box-shadow: 0px 20px 30px hsl(214, 68%, 7%);
+    ;
+}
+
+.info {
+    display: grid;
+    gap: .7rem;
+}
