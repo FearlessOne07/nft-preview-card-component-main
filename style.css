@@ -153,8 +153,27 @@ hr {
 }
 
 picture {
+    height: 250px;
+    background-image: url(images/image-equilibrium.jpg);
     border-radius: .5rem;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.active-image {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(178, 100%, 50%, .5);
+    opacity: 0;
+}
+
+picture:hover>.active-image {
+    opacity: 1;
 }
 
 .creator img {
